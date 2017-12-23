@@ -28,3 +28,6 @@
 - Git clone: `git clone some_link`
 
 ### `branch`
+- Create a branch `git branch branch_name`
+- Switch to a branch `git checkout branch_name`
+- Create a new branch and switch to it: `git checkout -b branch_name`
