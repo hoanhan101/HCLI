@@ -20,7 +20,7 @@
 ### `pull` | `push` | `clone`
 - List remote: `git remote -v`
 - Pull: `git pull some_link'
-- Push: `git push`
+- Push: `git push`, explicitly `git push origin master`
 - Tag: `git tag -a v0 -m 'some message'`
 - Push tag: `git push tag_name`
 - Push all tags: `git push --tags`
