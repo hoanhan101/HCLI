@@ -36,3 +36,9 @@
 - Delete merged branch: `git branch -d branch_name`
 - Delete unmerged branch: `git branch -D branch_name`
 - Mergetool: `git mergetool`
+- Rebase - moving the base of a branch onto a different position: `git rebase master`
+- Revert - undo, Reset, Clean
+
+### `ssh`
+- Generate ssh key: `ssh-keygen -t rsa -C email_address`
+- More at [Derek Banas's Youtube](https://youtu.be/IYo-NoyvtQg)
