@@ -1,6 +1,6 @@
 # `git` cli
 
-### `init`, `add`, `commit`
+### `init` | `add` | `commit`
 - Congif: `git config --global user.name "Hoanh An"'`
 - Help: `git command_name help`
 - Init: `git init`
@@ -17,7 +17,7 @@
 - Log: `git log`
 - Log in one line: `git long --pretty=online`
 
-### `pull`, `push`, `clone`
+### `pull` | `push` | `clone`
 - Remember to add and commit before pushing
 - List remote: `git remote -v`
 - Pull: `git pull some_link'
@@ -31,3 +31,4 @@
 - Create a branch `git branch branch_name`
 - Switch to a branch `git checkout branch_name`
 - Create a new branch and switch to it: `git checkout -b branch_name`
+- Checkout to master and see merged branch or unmereged branch: `git branch --merged` | `git branch --no-merged` 
