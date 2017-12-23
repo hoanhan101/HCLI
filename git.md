@@ -40,4 +40,7 @@
 
 ### `ssh`
 - Generate ssh key: `ssh-keygen -t rsa -C email_address`
-- More at [Derek Banas's Youtube](https://youtu.be/IYo-NoyvtQg)
+- More at [Derek Banas](https://youtu.be/IYo-NoyvtQg)
+
+### Github Pages
+- More at [The Coding Train](https://youtu.be/bFVtrlyH-kc)
