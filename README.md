@@ -1,6 +1,6 @@
-# GIT commands
+# `git` cli
 
-### BASIC GIT INIT, ADD, COMMIT
+### `init`, `add`, `commit`
 - Congif: `git config --global user.name "Hoanh An"'`
 - Help: `git command_name help`
 - Init: `git init`
@@ -17,7 +17,7 @@
 - Log: `git log`
 - Log in one line: `git long --pretty=online`
 
-### REMOTE, PUSH, PULL, TAG, CLONE ###
+### `pull`, `push`, `clone`
 - Remember to add and commit before pushing
 - List remote: `git remote -v`
 - Pull: `git pull some_link'
@@ -27,4 +27,4 @@
 - Push all tags: `git push --tags`
 - Git clone: `git clone some_link`
 
-### BRANCH
+### `branch`
