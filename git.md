@@ -11,7 +11,6 @@
 - Commit: `git commit -m 'some message`
 - Add and commit: `git commit -a -m 'some message'`
 - Status: `git status`
-- Stage: same with init
 - See what have changes: `git diff`
 - Can use `git add` to stage a file
 - Stop tracking a file: `git rm -f file_name`
