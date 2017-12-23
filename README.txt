@@ -12,6 +12,8 @@ Init: `git init`
 
 Track a specific file: `git add file_name`
 
+Track directory: `git add .`
+
 List all files, including hidden files: `ls -a` 
 
 Gitignore: Save as .gitignore
@@ -51,3 +53,5 @@ Push tag: `git push tag_name`
 Push all tags: `git push --tags`
 
 Git clone: `git clone some_link`
+
+### GIT BRANCH
