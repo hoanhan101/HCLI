@@ -49,3 +49,10 @@
 ### `user`
 - Create a new user: `sudo useradd user_name`
 - Create a password: `sudo passwd user_name`
+
+### `group`
+- Create a group: `sudo groupadd group_name` 
+- Add user to a group: `sudo usermod -a -G group_name user_name`
+- Delete user from a group: `sudo userdel user_name`
+
+
