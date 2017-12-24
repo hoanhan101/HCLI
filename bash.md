@@ -46,13 +46,10 @@
   - First `cd` to the directory
   - Run `bash pycharm.sh`
 
-### `user`
+### `user` & `group`
 - Create a new user: `sudo useradd user_name`
 - Create a password: `sudo passwd user_name`
-
-### `group`
 - Create a group: `sudo groupadd group_name` 
 - Add user to a group: `sudo usermod -a -G group_name user_name`
 - Delete user from a group: `sudo userdel user_name`
-
-
+- More about etc, password,... at [The new boston](https://youtu.be/7cRaGaIZQlo)
