@@ -36,6 +36,8 @@
 - Decompress tar: `tar xvf target_file.tar`
 
 ### `ssh`
+- Create a public/private key pair: `ssh-keygen -t rsa`
+- Add key to that server: `ssh-copy-id root@ip_address` so next time just `ssh root@ip_address` then you're in. More at [The new boston](https://youtu.be/xWLgdSgsBFo)
 - ssh with public key: `ssh -i file_name.pem ubuntu@ip_address`
 - Copy over network: `scp -r /Users/hoanhan/Downloads/from_folder hoanhan@ip_address:/home/hoanhan/to_folder`
 
