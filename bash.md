@@ -35,12 +35,6 @@
 - Compress mutiples files to tar: `tar cvf target_file.tar file1 file2`
 - Decompress tar: `tar xvf target_file.tar`
 
-### `ssh`
-- Create a public/private key pair: `ssh-keygen -t rsa`
-- Add key to that server: `ssh-copy-id root@ip_address` so next time just `ssh root@ip_address` then you're in. More at [The new boston](https://youtu.be/xWLgdSgsBFo)
-- ssh with public key: `ssh -i file_name.pem ubuntu@ip_address`
-- Copy over network: `scp -r /Users/hoanhan/Downloads/from_folder hoanhan@ip_address:/home/hoanhan/to_folder`
-
 ### `apt-get`
 - Update: `sudo apt-get update`
 - Install: `sudo apt-get install package_name`
@@ -55,3 +49,18 @@
 - Add user to a group: `sudo usermod -a -G group_name user_name`
 - Delete user from a group: `sudo userdel user_name`
 - More about etc, password,... at [The new boston](https://youtu.be/7cRaGaIZQlo)
+
+### `ssh`
+- Create a public/private key pair: `ssh-keygen -t rsa`
+- Add key to that server: `ssh-copy-id root@ip_address` so next time just `ssh root@ip_address` then you're in. More at [The new boston](https://youtu.be/xWLgdSgsBFo)
+- ssh with public key: `ssh -i file_name.pem ubuntu@ip_address`
+- Copy over network: `scp -r /Users/hoanhan/Downloads/from_folder hoanhan@ip_address:/home/hoanhan/to_folder`
+
+### `sfpt`
+- Connect to a server: `sfpt root@ip_address`
+- Copy a file to server: `put home_directory_name/file_name`
+- Copy a directory to server:
+  - `mkdir` first
+  - `put -r home_directory_name/file_name`
+- Download a file from server: `get server_file_name home_directory_name/file_name`
+- Download a directory from server: `get -r server_directory_name home_directory_name`
