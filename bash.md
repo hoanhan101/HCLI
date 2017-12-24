@@ -64,3 +64,10 @@
   - `put -r home_directory_name/file_name`
 - Download a file from server: `get server_file_name home_directory_name/file_name`
 - Download a directory from server: `get -r server_directory_name home_directory_name`
+
+## `process`
+- List processes: `ps`. `ps ax` for more details.
+- Interrupt signal: `control C`
+- Run a process in the background: `process_name &`
+- List all jobs: `jobs`
+- More at [The new boston](https://youtu.be/MWldNGdX9zE)
