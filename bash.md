@@ -29,6 +29,13 @@
   - 1: execute
   - 0: no permissions
 
+### `compress` & `extract`
+- Compress to gz: `gzip file_name`
+- Decompress gz: `gunzip file_name.gz`
+- Compress mutiples files to tar: `tar cvf target_file.tar file1 file2`
+- Decompress tar: `tar xvf target_file.tar`
+
+
 ### `ssh`
 - ssh with public key: `ssh -i file_name.pem ubuntu@ip_address`
 - Copy over network: `scp -r /Users/hoanhan/Downloads/from_folder hoanhan@ip_address:/home/hoanhan/to_folder`
