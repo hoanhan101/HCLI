@@ -1,4 +1,4 @@
-# `git` cli
+# `git`
 
 ### `init` & `add` & `commit`
 - Congif: `git config --global user.name "Hoanh An"'`

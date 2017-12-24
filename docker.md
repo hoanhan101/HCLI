@@ -1,3 +1,5 @@
+# `docker`
+
 ### `stop` & `remove` all
 - Stop all containers: `docker stop $(docker ps -aq)`
 - Remove all containers: `docker rm $(docker ps -aq)`

@@ -1,1 +1,1 @@
-# Hot commands
+# `hot commands`
