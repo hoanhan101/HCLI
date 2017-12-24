@@ -23,11 +23,11 @@
 - Add permission: `chmod o+w file_name`. 
 - Delete permission: `chmod o-w file_name`
 - Shortcut: `chmod 755 file_name`. 
-- - 7, 5, 5 represents the individual permission for user, group, everyone.
-- - 4: read
-- - 2: write
-- - 1: execute
-- - 0: no permissions
+  - 7, 5, 5 represents the individual permission for user, group, everyone.
+  - 4: read
+  - 2: write
+  - 1: execute
+  - 0: no permissions
 
 ### `ssh`
 - ssh with public key: `ssh -i file_name.pem ubuntu@ip_address`
