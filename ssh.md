@@ -1,2 +1,0 @@
-- Copy over network: `scp -r /Users/hoanhan/Downloads/from_folder hoanhan@ip_address:/home/hoanhan/to_folder`
-- ssh with public key: `ssh -i file_name.pem ubuntu@ip_address`
