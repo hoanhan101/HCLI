@@ -1,6 +1,6 @@
 # `git` cli
 
-### `init` | `add` | `commit`
+### `init` & `add` & `commit`
 - Congif: `git config --global user.name "Hoanh An"'`
 - Help: `git command_name --help`
 - Init: `git init`
@@ -17,7 +17,7 @@
 - Log: `git log`
 - Log in one line: `git long --pretty=online`
 
-### `pull` | `push` | `clone`
+### `pull` & `push` & `clone`
 - List remote: `git remote -v`
 - Pull: `git pull some_link'
 - Push: `git push`, explicitly `git push origin master`
@@ -42,5 +42,5 @@
 - Generate ssh key: `ssh-keygen -t rsa -C email_address`
 - More at [Derek Banas](https://youtu.be/IYo-NoyvtQg)
 
-### Github Pages
+### `github pages`
 - More at [The Coding Train](https://youtu.be/bFVtrlyH-kc)

@@ -1,6 +1,6 @@
 # `bash`
 
-### navigation
+### `navigation`
 - Change directory: `cd`
 - Create a directory: `mkdir directory_name`
 - Remove a directory: `mrdir directory_name
@@ -11,13 +11,13 @@
 - Move a file: `mv file1 directory_name/file_name`
 - Can use `mv` to rename file like `mv file1 file2`
 
-### files
+### `files`
 - Search for word in file `grep hello file_name`
 - Show difference between 2 files: `diff file1 file2`
 - Overwriting result to a file `ls > test`
 - Appending to a file `ls >> test`
 
-### file permission
+### `file permission`
 - user: `u`, group: `g`, other people (everyone): `o`
 - read: `r`, write: `w`, execute: `x`
 - Add permission: `chmod o+w file_name`. 
