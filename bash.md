@@ -35,7 +35,13 @@
 - Compress mutiples files to tar: `tar cvf target_file.tar file1 file2`
 - Decompress tar: `tar xvf target_file.tar`
 
-
 ### `ssh`
 - ssh with public key: `ssh -i file_name.pem ubuntu@ip_address`
 - Copy over network: `scp -r /Users/hoanhan/Downloads/from_folder hoanhan@ip_address:/home/hoanhan/to_folder`
+
+### `apt-get`
+- Update: `sudo apt-get update`
+- Install: `sudo apt-get install package_name`
+- Install desktop program, for example `pycharm`:
+  - First `cd` to the directory
+  - Run `bash pycharm.sh`
