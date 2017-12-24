@@ -45,3 +45,7 @@
 - Install desktop program, for example `pycharm`:
   - First `cd` to the directory
   - Run `bash pycharm.sh`
+
+### `user`
+- Create a new user: `sudo useradd user_name`
+- Create a password: `sudo passwd user_name`
