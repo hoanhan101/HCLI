@@ -18,6 +18,7 @@
 - Log in one line: `git long --pretty=online`
 
 ### `pull` & `push` & `clone`
+- List of commits waiting to be pushed: `git cherry -v`
 - List remote: `git remote -v`
 - Pull: `git pull some_link'
 - Push: `git push`, explicitly `git push origin master`
