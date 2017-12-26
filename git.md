@@ -15,7 +15,7 @@
 - Can use `git add` to stage a file
 - Stop tracking a file: `git rm -f file_name`
 - Log: `git log`
-- Log in one line: `git long --pretty=online`
+- Log in one line: `git log --pretty=online`
 
 ### `pull` & `push` & `clone`
 - List of commits waiting to be pushed: `git cherry -v`
