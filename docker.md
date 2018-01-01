@@ -3,8 +3,8 @@ ref: [Dockerbook](https://www.dockerbook.com/)
 
 ### `list`
 - List all running containers: `docker ps -a`
-- - `-a`: lists all containers
-- - `-l`: shows the last container launched
+  - `-a`: lists all containers
+  - `-l`: shows the last container launched
 - Show the last x containers: `docker ps -n x`
 - Show container's port: `docker port container_name`
 
