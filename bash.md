@@ -6,7 +6,7 @@
 - Remove a directory: `mrdir directory_name`
 - Create a file: `touch file_name`
 - Remove a file: `rm fike_name`
-- List file: `ls`. Param `-l` for more details, `-a` for all files, including hidden filesk
+- List file: `ls`. Param `-l` for more details, `-a` for all files, including hidden files
 - Copy a file: `cp file1 file2`
 - Move a file: `mv file1 directory_name/file_name`
 - Can use `mv` to rename file like `mv file1 file2`
