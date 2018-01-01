@@ -1,4 +1,5 @@
 # `docker`
+ref: [Dockerbook](https://www.dockerbook.com/)
 
 ### `list`
 - List all running containers: `docker ps -a`
@@ -47,6 +48,7 @@
 - - State: `docker inspect --format='{{ .State.Running }}' container_name`
 - - IP address: `docker inspect --format '{{ .NetworkSettings.IPAddress }}' container_name`
 - - Multiple containers: `docker inspect --format '{{.Name}} {{.State.Running}}' container_1 container_2` 
+- - Health status: `docker inspect --format '{{.State.Health.Status}}'`
 
 ### `images`
 - List all images: `docker images`
@@ -75,6 +77,69 @@
 - - 80 -> 127.0.0.1:80: `docker run -d -p 127.0.0.1:80:80 --name container_name hoanhan/image_name nginx -g "daemon off;"`
 - - Publish a random port and any additional ports we've specified in Dockerfile: `docker run -d -P --name container_name hoanhan/image_name nginx -g "daemon off;"`
 - Run unless stop: `docker run -dit -p 5000:5000 --restart unless-stopped container_name`
+
+### `Dockerfile`
+- `CMD`: species the command to run when a container is launched
+- - `CMD ["/bin/true"]`
+- - Passing a parametter: `CMD ["/bin/bash", "-l"]`
+- - Can only specify one `CMD`. If more than one is specied, then the last `CMD` will be used.
+
+- `ENTRYPOINT`: any arguments we specify on the `docker run` command line will be passed as arguments to the command specied in the `ENTRYPOINT`
+- - `ENTRYPOINT ["/usr/sbin/nginx"]`
+- - Specify a parameter: `ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]`
+- - Can also combine `ENTRYPOINT` and `CMD` to do some neat things.
+- - - `ENTRYPOINT ["/usr/sbin/nginx"]`
+- - - `CMD ["-h"]`
+- - - If we run `sudo docker run -t -i hoanhan/image_name -g "daemon off;"` then `-g "daemon off;"` will be pass to the `ENTRYPOINT` and `-h` is passed by the `CMD` and returns the Nginx help text: `/usr/sbin/nginx -h.`
+
+- `WORKDIR`: provides a way to set the working directory for the container and the `ENTRYPOINT` and/or `CMD` to be executed when a container is launched from the image
+- - `WORKDIR /opt/webapp/db`
+- - `RUN bundle install`
+- - `WORKDIR /opt/webapp`
+- - `ENTRYPOINT [ "rackup" ]`
+
+- `ENV`: set environment variables during the image build process
+- - `ENV RVM_PATH /home/rvm/` then `RUN gem install unicorn` would be executed as `RVM_PATH=/home/rvm/ gem install unicorn`
+
+- `USER`: species a user that the image should be run as
+- - `USER nginx`
+
+- `VOLUME`: adds volumes to any container created from the image
+- - `VOLUME ["/opt/project"]`
+- - Multiple volumnes: `VOLUME ["/opt/project", "/data" ]`
+
+- `ADD`: adds files and directories from our build environment into our image
+- - Copy software.lic from the build directory to /opt/application/software.lic in the image: `ADD software.lic /opt/application/software.lic`
+
+- `COPY`: purely focuses on copying local files from the build context and does not have any extraction or decompression capabilities
+- - Copy files from the conf.d directory to the /etc/apache2/ directory: `COPY conf.d/ /etc/apache2/`
+
+- `LABEL`: adds metadata to a Docker image
+- - `LABEL version="1.0"`
+- - `LABEL location="New York" type="Data Center" role="Web Server"`
+
+- `STOPSIGNAL`: sets the system call signal that will be sent to the container when you tell it to stop
+- `ARG`: defines variables that can be passed at build-time via the docker build command
+- Done by using the `--build-arg` flag
+
+- - `ARG build`
+- - `ARG webapp_user=user`
+- - `docker build --build-arg build=1234 -t hoanhan/webapp .`
+- - Predefined variables:
+- - - HTTP_PROXY
+- - - FTP_PROXY
+- - - NO_PROXY
+
+- `SHELL`: allows the default shell used for the shell form of commands to be overridden.
+- - Default shell on Linux is `["/bin/sh", "-c"]`
+
+- `HEALTHCHECK`: tells Docker how to test a container to check that it is still working correctly
+- - `HEALTHCHECK --interval=10s --timeout=1m --retries=5 CMD curl http ://localhost || exit 1`
+
+- `ONBUILD`: adds triggers to images
+- - `ONBUILD ADD . /app/src`
+- - `ONBUILD RUN cd /app/src; make`
+
 
 
 
