@@ -3,7 +3,7 @@
 ### `navigation`
 - Change directory: `cd`
 - Create a directory: `mkdir directory_name`
-- Remove a directory: `mrdir directory_name
+- Remove a directory: `mrdir directory_name`
 - Create a file: `touch file_name`
 - Remove a file: `rm fike_name`
 - List file: `ls`. Param `-l` for more details, `-a` for all files, including hidden filesk
@@ -20,10 +20,10 @@
 ### `file permission`
 - user: `u`, group: `g`, other people (everyone): `o`
 - read: `r`, write: `w`, execute: `x`
-- Add permission: `chmod o+w file_name`. 
+- Add permission: `chmod o+w file_name`
 - Delete permission: `chmod o-w file_name`
-- Shortcut: `chmod 755 file_name`. 
-  - 7, 5, 5 represents the individual permission for user, group, everyone.
+- Shortcut: `chmod 755 file_name`
+  - 7, 5, 5 represents the individual permission for user, group, everyone
   - 4: read
   - 2: write
   - 1: execute
