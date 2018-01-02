@@ -1,5 +1,5 @@
 # `docker`
-ref: [Dockerbook](https://www.dockerbook.com/)
+Reference: [Dockerbook](https://www.dockerbook.com/)
 
 ### `list`
 - List all running containers: `docker ps -a`
@@ -139,13 +139,6 @@ ref: [Dockerbook](https://www.dockerbook.com/)
 - `ONBUILD`: adds triggers to images
   - `ONBUILD ADD . /app/src`
   - `ONBUILD RUN cd /app/src; make`
-
-
-
-
-<!-- To be organized -->
-
-
 
 ### `docker hub`
 - Tag a specific image: `docker tag image_id username/image_name:latest`
