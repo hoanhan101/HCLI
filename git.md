@@ -31,6 +31,7 @@
 - Create a branch `git branch branch_name`
 - Switch to a branch `git checkout branch_name`
 - Create a new branch and switch to it: `git checkout -b branch_name`
+- Check out a remote branch: `git checkout -b branch_name origin/branch_name`
 - Checkout to master and see merged branch or unmereged branch: `git branch --merged` | `git branch --no-merged` 
 - Merge a branch: `git merge branch_name`
 - Delete merged branch: `git branch -d branch_name`
